@@ -29,4 +29,14 @@ public class NumerosTest {
     public void test4() {
         assertEquals(1, Numeros.soniguales(14, 14, 33));
     }
+
+    @Test // dos iguales y uno diferente
+    public void test5() {
+        assertEquals(1, Numeros.soniguales(32, 55, 55));
+    }
+
+    @Test // todos iguales
+    public void test6() {
+        assertEquals(0, Numeros.soniguales(329,329,329));
+    }
 }
